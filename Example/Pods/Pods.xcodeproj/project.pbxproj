@@ -1,0 +1,842 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		047E9C04BFCFA9AFEC39B3D671EE1FC0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E96EEB6DD12B093B2900559A7D02AF5C /* Foundation.framework */; };
+		09F3D6294ED04C737693FD99F6FBBE40 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BED7BAD9E610C260DB7F474CDADE01F /* CoreVideo.framework */; };
+		11A05734C830881A6F4FB8AAD7812865 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49B8AFB51A9D5E5CFC265F7CCDFFC6AC /* CoreMedia.framework */; };
+		136020B4C693B2937A1A88E84CF91E39 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E96EEB6DD12B093B2900559A7D02AF5C /* Foundation.framework */; };
+		1395FF51F25B592B5240567DB2575688 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47A36498F260048BFBC27B94614DD2E3 /* VideoToolbox.framework */; };
+		1B9CCADBA79B630867C326CA93DB262D /* Pods-WYPlayerObjc_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F989008E6BE5231ECB7EFF8C79335C /* Pods-WYPlayerObjc_Tests-dummy.m */; };
+		255FBD03B6E0570E2D81650627D4CCA0 /* Pods-WYPlayerObjc_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 23851F6138B7757C5920B8C0D0996147 /* Pods-WYPlayerObjc_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38C02D73ED673AB70A24280A9D80C7D7 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91E870E8A29B0408CFBAC6792520CD2D /* MediaPlayer.framework */; };
+		3E77E598EDA99A6CA35C5137DF903744 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95C7BDDE8443E1B393DD5FF05C160452 /* OpenGLES.framework */; };
+		4790BEA0D4409AF5FAA390468BDECB9B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E935037A41019340494833C9F5B0115 /* QuartzCore.framework */; };
+		51C25BE061FBEA9D0B179DAAF861F879 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90219D48F81E88F6FB687C12BB88A4AF /* UIKit.framework */; };
+		6450A251982D6FD06E0DFD2D5F690BAC /* WYPlayerViewObjc.h in Headers */ = {isa = PBXBuildFile; fileRef = C68BFF5C06B2F64ED608ECD15FC78B8F /* WYPlayerViewObjc.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73D1A9AE279FFF7B419264D8C34FAACC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C36D091C883DDC860D54E3201C9061AF /* AVFoundation.framework */; };
+		76AB0C3DE3980E17A916E1E28B3FF85E /* Pods-WYPlayerObjc_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FD523035AB12B9EA69EB49B5B7AFD7A6 /* Pods-WYPlayerObjc_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		783A6561018D3DE8556E2ADE781F8031 /* WYPlayerObjc-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D49CAAAB6E202653AEE8BD2C82999DDB /* WYPlayerObjc-dummy.m */; };
+		7C2BDE9FE92B43B04ABDA5AFE39F8634 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E96EEB6DD12B093B2900559A7D02AF5C /* Foundation.framework */; };
+		8934402672D4ADE2B5D51E2E7F509365 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 034EFE0C48FDFB80BC6805118E716766 /* Accelerate.framework */; };
+		A1EEE1155C7D0E611F918C5C6BAEF71E /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECCD83A21EB0F7AD9CC55B8746046ECC /* CoreTelephony.framework */; };
+		AE8989493D4215C4DDB02B2AB295D7C3 /* WYPlayerObjc-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FE488BB033614A88A29479F08853A62 /* WYPlayerObjc-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B552397CA8CE4D1164B8FAAC80C80C99 /* Pods-WYPlayerObjc_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA923EC698AB11A84C9919F6D23E6AD /* Pods-WYPlayerObjc_Example-dummy.m */; };
+		B8B4945EA4C792D3C96BF921E4DDF377 /* WYPlayerViewObjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B498F97F1A7856B119E9FA72CA0F580 /* WYPlayerViewObjc.m */; };
+		BE03AF2F30576AAA122552D950DBABD2 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFD80092F905ADC6D3F5E4387D24917 /* AVKit.framework */; };
+		C0E7E1BFA1D59708A25A38ABC8F1A752 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E63DDCB78B10AB8CADA4598514F8ECDE /* AudioToolbox.framework */; };
+		EF92BBEFAA7E569C158C03660FE4BB80 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0674DDE417BFC4A7209A84DC1D97C634 /* CoreAudio.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		70E894995C5413B60C60F62AE837A71A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB8D0839F7EC10143AE3310726A6B6F8;
+			remoteInfo = "Pods-WYPlayerObjc_Example";
+		};
+		EC47E075881D6501CCB661F469787B7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04952E539409AE8521B9D3972E9E6ADD;
+			remoteInfo = WYPlayerObjc;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		034EFE0C48FDFB80BC6805118E716766 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
+		0674DDE417BFC4A7209A84DC1D97C634 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreAudio.framework; sourceTree = DEVELOPER_DIR; };
+		0740D841840766E09A3DD90EEDF9BA05 /* WYPlayerObjc-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WYPlayerObjc-Info.plist"; sourceTree = "<group>"; };
+		07ECEC7650FEEE28EF4C236689C65D71 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		0AFD80092F905ADC6D3F5E4387D24917 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/AVKit.framework; sourceTree = DEVELOPER_DIR; };
+		18A87E3B3316BF4A3FEB88CB6933D0A8 /* WYPlayerObjc.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = WYPlayerObjc.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		1FE488BB033614A88A29479F08853A62 /* WYPlayerObjc-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WYPlayerObjc-umbrella.h"; sourceTree = "<group>"; };
+		23851F6138B7757C5920B8C0D0996147 /* Pods-WYPlayerObjc_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WYPlayerObjc_Example-umbrella.h"; sourceTree = "<group>"; };
+		2E935037A41019340494833C9F5B0115 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		31BD24394EBAAAC2990CF6BD2D351A29 /* WYPlayerObjc-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WYPlayerObjc-prefix.pch"; sourceTree = "<group>"; };
+		33077389448A5A7C37D8305C41CBDF56 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		3ABC3F9D23202A40DAFF996432985FCC /* Pods-WYPlayerObjc_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WYPlayerObjc_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		41A39154C87E8CC34730E20422DF213B /* Pods-WYPlayerObjc_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WYPlayerObjc_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		431EBDC1CB939DF6ACB9FD1E053BBF25 /* Pods-WYPlayerObjc_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WYPlayerObjc_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		47A36498F260048BFBC27B94614DD2E3 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/VideoToolbox.framework; sourceTree = DEVELOPER_DIR; };
+		49B8AFB51A9D5E5CFC265F7CCDFFC6AC /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreMedia.framework; sourceTree = DEVELOPER_DIR; };
+		4CDBF4564551FCD3552921DCD2CE27DC /* WYPlayerObjc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WYPlayerObjc.release.xcconfig; sourceTree = "<group>"; };
+		5176ADEACC07EA48B02675FEA1882ADD /* Pods-WYPlayerObjc_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WYPlayerObjc_Example.modulemap"; sourceTree = "<group>"; };
+		546987C7871B40BF1AB209D8C3ADF873 /* Pods-WYPlayerObjc_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WYPlayerObjc_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		599165594E4CEBD365E8109E81B8DAB5 /* Pods-WYPlayerObjc_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WYPlayerObjc_Tests.modulemap"; sourceTree = "<group>"; };
+		67C36E8A0114F6C84F79AE39994ACBF0 /* Pods-WYPlayerObjc_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WYPlayerObjc_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6F65F5A8228DAA3DDD1C5AB0E10CBAE7 /* WYPlayerObjc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WYPlayerObjc.debug.xcconfig; sourceTree = "<group>"; };
+		7B498F97F1A7856B119E9FA72CA0F580 /* WYPlayerViewObjc.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WYPlayerViewObjc.m; path = WYPlayerObjc/Classes/WYPlayerViewObjc.m; sourceTree = "<group>"; };
+		84E9BA4F98D3D7D26BC4B131469B9978 /* Pods-WYPlayerObjc_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WYPlayerObjc_Example-frameworks.sh"; sourceTree = "<group>"; };
+		8BED7BAD9E610C260DB7F474CDADE01F /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreVideo.framework; sourceTree = DEVELOPER_DIR; };
+		8BF4AEFCBC7D139B450C8E9814F08F0D /* Pods-WYPlayerObjc_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WYPlayerObjc_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		90219D48F81E88F6FB687C12BB88A4AF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		91E870E8A29B0408CFBAC6792520CD2D /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/MediaPlayer.framework; sourceTree = DEVELOPER_DIR; };
+		95C7BDDE8443E1B393DD5FF05C160452 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/OpenGLES.framework; sourceTree = DEVELOPER_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9EF012AB03CC29143741FBBC11E67538 /* Pods-WYPlayerObjc_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-WYPlayerObjc_Example"; path = Pods_WYPlayerObjc_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A57A8A26E628176D843BFEA408E8D34F /* Pods-WYPlayerObjc_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-WYPlayerObjc_Tests"; path = Pods_WYPlayerObjc_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5E4A81CFA17FCA824A326C2B3194A49 /* WYPlayerObjc */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WYPlayerObjc; path = WYPlayerObjc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDE7033856F86C67188043AB39D66C66 /* Pods-WYPlayerObjc_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WYPlayerObjc_Example-Info.plist"; sourceTree = "<group>"; };
+		C34BC96F1C94B91F235CECD1B0D0AA62 /* Pods-WYPlayerObjc_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WYPlayerObjc_Tests-Info.plist"; sourceTree = "<group>"; };
+		C36D091C883DDC860D54E3201C9061AF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		C68BFF5C06B2F64ED608ECD15FC78B8F /* WYPlayerViewObjc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WYPlayerViewObjc.h; path = WYPlayerObjc/Classes/WYPlayerViewObjc.h; sourceTree = "<group>"; };
+		D00FD4FF95C220A07BC751BFCA0CE5DD /* Pods-WYPlayerObjc_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WYPlayerObjc_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		D49CAAAB6E202653AEE8BD2C82999DDB /* WYPlayerObjc-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WYPlayerObjc-dummy.m"; sourceTree = "<group>"; };
+		D599E621AADD8E8245E2B7EACDE91FEE /* Pods-WYPlayerObjc_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WYPlayerObjc_Example.release.xcconfig"; sourceTree = "<group>"; };
+		D8F989008E6BE5231ECB7EFF8C79335C /* Pods-WYPlayerObjc_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WYPlayerObjc_Tests-dummy.m"; sourceTree = "<group>"; };
+		DC42412A5D487BC670907E4E5E7829F3 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IJKMediaFramework.framework; path = WYPlayerObjc/IJKMediaFramework.framework; sourceTree = "<group>"; };
+		E63DDCB78B10AB8CADA4598514F8ECDE /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
+		E96EEB6DD12B093B2900559A7D02AF5C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		ECCD83A21EB0F7AD9CC55B8746046ECC /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
+		FCDC1A78F929FEBEEF784F1E984645D0 /* WYPlayerObjc.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WYPlayerObjc.modulemap; sourceTree = "<group>"; };
+		FD523035AB12B9EA69EB49B5B7AFD7A6 /* Pods-WYPlayerObjc_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WYPlayerObjc_Tests-umbrella.h"; sourceTree = "<group>"; };
+		FDA923EC698AB11A84C9919F6D23E6AD /* Pods-WYPlayerObjc_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WYPlayerObjc_Example-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3764781A11834841DD3947EA52013D08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				047E9C04BFCFA9AFEC39B3D671EE1FC0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BDAA3267D7E79B7C7E3EC393A5669C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				136020B4C693B2937A1A88E84CF91E39 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D73BD07EA156C26D08782DE91756EECF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8934402672D4ADE2B5D51E2E7F509365 /* Accelerate.framework in Frameworks */,
+				C0E7E1BFA1D59708A25A38ABC8F1A752 /* AudioToolbox.framework in Frameworks */,
+				73D1A9AE279FFF7B419264D8C34FAACC /* AVFoundation.framework in Frameworks */,
+				BE03AF2F30576AAA122552D950DBABD2 /* AVKit.framework in Frameworks */,
+				EF92BBEFAA7E569C158C03660FE4BB80 /* CoreAudio.framework in Frameworks */,
+				11A05734C830881A6F4FB8AAD7812865 /* CoreMedia.framework in Frameworks */,
+				A1EEE1155C7D0E611F918C5C6BAEF71E /* CoreTelephony.framework in Frameworks */,
+				09F3D6294ED04C737693FD99F6FBBE40 /* CoreVideo.framework in Frameworks */,
+				7C2BDE9FE92B43B04ABDA5AFE39F8634 /* Foundation.framework in Frameworks */,
+				38C02D73ED673AB70A24280A9D80C7D7 /* MediaPlayer.framework in Frameworks */,
+				3E77E598EDA99A6CA35C5137DF903744 /* OpenGLES.framework in Frameworks */,
+				4790BEA0D4409AF5FAA390468BDECB9B /* QuartzCore.framework in Frameworks */,
+				51C25BE061FBEA9D0B179DAAF861F879 /* UIKit.framework in Frameworks */,
+				1395FF51F25B592B5240567DB2575688 /* VideoToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00AA1222FC9916FFD455B67F5AEDBA55 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FCDC1A78F929FEBEEF784F1E984645D0 /* WYPlayerObjc.modulemap */,
+				D49CAAAB6E202653AEE8BD2C82999DDB /* WYPlayerObjc-dummy.m */,
+				0740D841840766E09A3DD90EEDF9BA05 /* WYPlayerObjc-Info.plist */,
+				31BD24394EBAAAC2990CF6BD2D351A29 /* WYPlayerObjc-prefix.pch */,
+				1FE488BB033614A88A29479F08853A62 /* WYPlayerObjc-umbrella.h */,
+				6F65F5A8228DAA3DDD1C5AB0E10CBAE7 /* WYPlayerObjc.debug.xcconfig */,
+				4CDBF4564551FCD3552921DCD2CE27DC /* WYPlayerObjc.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/WYPlayerObjc";
+			sourceTree = "<group>";
+		};
+		0EE0BFE9B55B45C27060B226DF41ED8D /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				33077389448A5A7C37D8305C41CBDF56 /* LICENSE */,
+				07ECEC7650FEEE28EF4C236689C65D71 /* README.md */,
+				18A87E3B3316BF4A3FEB88CB6933D0A8 /* WYPlayerObjc.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		42FD1D29D2B8B5322DB85E1321AC18C8 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9514EACB4960F7181E0347349E1BFF61 /* Pods-WYPlayerObjc_Example */,
+				99479B3E645AD7D528311935590D0ACF /* Pods-WYPlayerObjc_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		65ABBCDECFD7F0E1A4A652E277074BB7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9EF012AB03CC29143741FBBC11E67538 /* Pods-WYPlayerObjc_Example */,
+				A57A8A26E628176D843BFEA408E8D34F /* Pods-WYPlayerObjc_Tests */,
+				B5E4A81CFA17FCA824A326C2B3194A49 /* WYPlayerObjc */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7C68097DF684809FEB292F2B850B50C5 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D0FA6FFD129ECF93A49AB68126F17CE5 /* WYPlayerObjc */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		9514EACB4960F7181E0347349E1BFF61 /* Pods-WYPlayerObjc_Example */ = {
+			isa = PBXGroup;
+			children = (
+				5176ADEACC07EA48B02675FEA1882ADD /* Pods-WYPlayerObjc_Example.modulemap */,
+				67C36E8A0114F6C84F79AE39994ACBF0 /* Pods-WYPlayerObjc_Example-acknowledgements.markdown */,
+				431EBDC1CB939DF6ACB9FD1E053BBF25 /* Pods-WYPlayerObjc_Example-acknowledgements.plist */,
+				FDA923EC698AB11A84C9919F6D23E6AD /* Pods-WYPlayerObjc_Example-dummy.m */,
+				84E9BA4F98D3D7D26BC4B131469B9978 /* Pods-WYPlayerObjc_Example-frameworks.sh */,
+				BDE7033856F86C67188043AB39D66C66 /* Pods-WYPlayerObjc_Example-Info.plist */,
+				23851F6138B7757C5920B8C0D0996147 /* Pods-WYPlayerObjc_Example-umbrella.h */,
+				8BF4AEFCBC7D139B450C8E9814F08F0D /* Pods-WYPlayerObjc_Example.debug.xcconfig */,
+				D599E621AADD8E8245E2B7EACDE91FEE /* Pods-WYPlayerObjc_Example.release.xcconfig */,
+			);
+			name = "Pods-WYPlayerObjc_Example";
+			path = "Target Support Files/Pods-WYPlayerObjc_Example";
+			sourceTree = "<group>";
+		};
+		99479B3E645AD7D528311935590D0ACF /* Pods-WYPlayerObjc_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				599165594E4CEBD365E8109E81B8DAB5 /* Pods-WYPlayerObjc_Tests.modulemap */,
+				41A39154C87E8CC34730E20422DF213B /* Pods-WYPlayerObjc_Tests-acknowledgements.markdown */,
+				546987C7871B40BF1AB209D8C3ADF873 /* Pods-WYPlayerObjc_Tests-acknowledgements.plist */,
+				D8F989008E6BE5231ECB7EFF8C79335C /* Pods-WYPlayerObjc_Tests-dummy.m */,
+				C34BC96F1C94B91F235CECD1B0D0AA62 /* Pods-WYPlayerObjc_Tests-Info.plist */,
+				FD523035AB12B9EA69EB49B5B7AFD7A6 /* Pods-WYPlayerObjc_Tests-umbrella.h */,
+				D00FD4FF95C220A07BC751BFCA0CE5DD /* Pods-WYPlayerObjc_Tests.debug.xcconfig */,
+				3ABC3F9D23202A40DAFF996432985FCC /* Pods-WYPlayerObjc_Tests.release.xcconfig */,
+			);
+			name = "Pods-WYPlayerObjc_Tests";
+			path = "Target Support Files/Pods-WYPlayerObjc_Tests";
+			sourceTree = "<group>";
+		};
+		A6E9548742CFBE9E5FFD02642CD70628 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				034EFE0C48FDFB80BC6805118E716766 /* Accelerate.framework */,
+				E63DDCB78B10AB8CADA4598514F8ECDE /* AudioToolbox.framework */,
+				C36D091C883DDC860D54E3201C9061AF /* AVFoundation.framework */,
+				0AFD80092F905ADC6D3F5E4387D24917 /* AVKit.framework */,
+				0674DDE417BFC4A7209A84DC1D97C634 /* CoreAudio.framework */,
+				49B8AFB51A9D5E5CFC265F7CCDFFC6AC /* CoreMedia.framework */,
+				ECCD83A21EB0F7AD9CC55B8746046ECC /* CoreTelephony.framework */,
+				8BED7BAD9E610C260DB7F474CDADE01F /* CoreVideo.framework */,
+				E96EEB6DD12B093B2900559A7D02AF5C /* Foundation.framework */,
+				91E870E8A29B0408CFBAC6792520CD2D /* MediaPlayer.framework */,
+				95C7BDDE8443E1B393DD5FF05C160452 /* OpenGLES.framework */,
+				2E935037A41019340494833C9F5B0115 /* QuartzCore.framework */,
+				90219D48F81E88F6FB687C12BB88A4AF /* UIKit.framework */,
+				47A36498F260048BFBC27B94614DD2E3 /* VideoToolbox.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		BF6392E7119031547360FAE5EB6AEA6B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC42412A5D487BC670907E4E5E7829F3 /* IJKMediaFramework.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				7C68097DF684809FEB292F2B850B50C5 /* Development Pods */,
+				E5F5C55E92AC2AAD92797EE3CC9ED22C /* Frameworks */,
+				65ABBCDECFD7F0E1A4A652E277074BB7 /* Products */,
+				42FD1D29D2B8B5322DB85E1321AC18C8 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D0FA6FFD129ECF93A49AB68126F17CE5 /* WYPlayerObjc */ = {
+			isa = PBXGroup;
+			children = (
+				C68BFF5C06B2F64ED608ECD15FC78B8F /* WYPlayerViewObjc.h */,
+				7B498F97F1A7856B119E9FA72CA0F580 /* WYPlayerViewObjc.m */,
+				BF6392E7119031547360FAE5EB6AEA6B /* Frameworks */,
+				0EE0BFE9B55B45C27060B226DF41ED8D /* Pod */,
+				00AA1222FC9916FFD455B67F5AEDBA55 /* Support Files */,
+			);
+			name = WYPlayerObjc;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		E5F5C55E92AC2AAD92797EE3CC9ED22C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A6E9548742CFBE9E5FFD02642CD70628 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		12D5CECB598906642F0A56458F35EB03 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76AB0C3DE3980E17A916E1E28B3FF85E /* Pods-WYPlayerObjc_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43254A8A774D8843FD5D4A181638987D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE8989493D4215C4DDB02B2AB295D7C3 /* WYPlayerObjc-umbrella.h in Headers */,
+				6450A251982D6FD06E0DFD2D5F690BAC /* WYPlayerViewObjc.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6046ED526D485EA2E11B0DE515AA7BF0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				255FBD03B6E0570E2D81650627D4CCA0 /* Pods-WYPlayerObjc_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		04952E539409AE8521B9D3972E9E6ADD /* WYPlayerObjc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3482E4B206A3C401C207D45A817568C7 /* Build configuration list for PBXNativeTarget "WYPlayerObjc" */;
+			buildPhases = (
+				43254A8A774D8843FD5D4A181638987D /* Headers */,
+				417DCC686E0F7761B11DF990F29E7054 /* Sources */,
+				D73BD07EA156C26D08782DE91756EECF /* Frameworks */,
+				971C2C988865765F642F532136B88F17 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WYPlayerObjc;
+			productName = WYPlayerObjc;
+			productReference = B5E4A81CFA17FCA824A326C2B3194A49 /* WYPlayerObjc */;
+			productType = "com.apple.product-type.framework";
+		};
+		3E982DBFF9F066E7515AAAC0332F5239 /* Pods-WYPlayerObjc_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E44089ECC3A0BA546C8278363C532F92 /* Build configuration list for PBXNativeTarget "Pods-WYPlayerObjc_Tests" */;
+			buildPhases = (
+				12D5CECB598906642F0A56458F35EB03 /* Headers */,
+				DCA48E05E8C45B476DE525D18CF53F68 /* Sources */,
+				3764781A11834841DD3947EA52013D08 /* Frameworks */,
+				F471D24368C8C3EA5FA86FC8669089A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D6319A0C7918876B85ADB6BF2C40E61 /* PBXTargetDependency */,
+			);
+			name = "Pods-WYPlayerObjc_Tests";
+			productName = Pods_WYPlayerObjc_Tests;
+			productReference = A57A8A26E628176D843BFEA408E8D34F /* Pods-WYPlayerObjc_Tests */;
+			productType = "com.apple.product-type.framework";
+		};
+		FB8D0839F7EC10143AE3310726A6B6F8 /* Pods-WYPlayerObjc_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B5678585EC2DF8D60202D2819DD5222 /* Build configuration list for PBXNativeTarget "Pods-WYPlayerObjc_Example" */;
+			buildPhases = (
+				6046ED526D485EA2E11B0DE515AA7BF0 /* Headers */,
+				ADDF1E5CD5CD60A0271D2C13F5F17E16 /* Sources */,
+				8BDAA3267D7E79B7C7E3EC393A5669C2 /* Frameworks */,
+				071642CC6EF6DF891EFD4D86E69C09A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C63450BE3E2BEEFD7ABFC9C0200C68EC /* PBXTargetDependency */,
+			);
+			name = "Pods-WYPlayerObjc_Example";
+			productName = Pods_WYPlayerObjc_Example;
+			productReference = 9EF012AB03CC29143741FBBC11E67538 /* Pods-WYPlayerObjc_Example */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 65ABBCDECFD7F0E1A4A652E277074BB7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB8D0839F7EC10143AE3310726A6B6F8 /* Pods-WYPlayerObjc_Example */,
+				3E982DBFF9F066E7515AAAC0332F5239 /* Pods-WYPlayerObjc_Tests */,
+				04952E539409AE8521B9D3972E9E6ADD /* WYPlayerObjc */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		071642CC6EF6DF891EFD4D86E69C09A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		971C2C988865765F642F532136B88F17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F471D24368C8C3EA5FA86FC8669089A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		417DCC686E0F7761B11DF990F29E7054 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				783A6561018D3DE8556E2ADE781F8031 /* WYPlayerObjc-dummy.m in Sources */,
+				B8B4945EA4C792D3C96BF921E4DDF377 /* WYPlayerViewObjc.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADDF1E5CD5CD60A0271D2C13F5F17E16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B552397CA8CE4D1164B8FAAC80C80C99 /* Pods-WYPlayerObjc_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCA48E05E8C45B476DE525D18CF53F68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B9CCADBA79B630867C326CA93DB262D /* Pods-WYPlayerObjc_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3D6319A0C7918876B85ADB6BF2C40E61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-WYPlayerObjc_Example";
+			target = FB8D0839F7EC10143AE3310726A6B6F8 /* Pods-WYPlayerObjc_Example */;
+			targetProxy = 70E894995C5413B60C60F62AE837A71A /* PBXContainerItemProxy */;
+		};
+		C63450BE3E2BEEFD7ABFC9C0200C68EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WYPlayerObjc;
+			target = 04952E539409AE8521B9D3972E9E6ADD /* WYPlayerObjc */;
+			targetProxy = EC47E075881D6501CCB661F469787B7F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0EF59AFE88544BA6EE5C8FA9D2F1DDEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D599E621AADD8E8245E2B7EACDE91FEE /* Pods-WYPlayerObjc_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WYPlayerObjc_Example/Pods-WYPlayerObjc_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WYPlayerObjc_Example/Pods-WYPlayerObjc_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2D7984FF91A5BB1FB87305D6C789D264 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BF4AEFCBC7D139B450C8E9814F08F0D /* Pods-WYPlayerObjc_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WYPlayerObjc_Example/Pods-WYPlayerObjc_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WYPlayerObjc_Example/Pods-WYPlayerObjc_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3A57270D4B0D677AE106916AAB38A4C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F65F5A8228DAA3DDD1C5AB0E10CBAE7 /* WYPlayerObjc.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/WYPlayerObjc/WYPlayerObjc-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WYPlayerObjc/WYPlayerObjc-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/WYPlayerObjc/WYPlayerObjc.modulemap";
+				PRODUCT_MODULE_NAME = WYPlayerObjc;
+				PRODUCT_NAME = WYPlayerObjc;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		890974A038C9CD944E5837A9829B08DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CDBF4564551FCD3552921DCD2CE27DC /* WYPlayerObjc.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/WYPlayerObjc/WYPlayerObjc-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WYPlayerObjc/WYPlayerObjc-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/WYPlayerObjc/WYPlayerObjc.modulemap";
+				PRODUCT_MODULE_NAME = WYPlayerObjc;
+				PRODUCT_NAME = WYPlayerObjc;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		97FA5B18DE703C30F4E9194CC8D4C5F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D00FD4FF95C220A07BC751BFCA0CE5DD /* Pods-WYPlayerObjc_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WYPlayerObjc_Tests/Pods-WYPlayerObjc_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WYPlayerObjc_Tests/Pods-WYPlayerObjc_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AC19D76B3B851127465CBF10383880F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3ABC3F9D23202A40DAFF996432985FCC /* Pods-WYPlayerObjc_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WYPlayerObjc_Tests/Pods-WYPlayerObjc_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WYPlayerObjc_Tests/Pods-WYPlayerObjc_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3482E4B206A3C401C207D45A817568C7 /* Build configuration list for PBXNativeTarget "WYPlayerObjc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A57270D4B0D677AE106916AAB38A4C7 /* Debug */,
+				890974A038C9CD944E5837A9829B08DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D299434AB35E7FD6F7921C8EF24742FF /* Debug */,
+				7EE7A78859F657F6BEFC651185B43192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B5678585EC2DF8D60202D2819DD5222 /* Build configuration list for PBXNativeTarget "Pods-WYPlayerObjc_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D7984FF91A5BB1FB87305D6C789D264 /* Debug */,
+				0EF59AFE88544BA6EE5C8FA9D2F1DDEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E44089ECC3A0BA546C8278363C532F92 /* Build configuration list for PBXNativeTarget "Pods-WYPlayerObjc_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97FA5B18DE703C30F4E9194CC8D4C5F1 /* Debug */,
+				AC19D76B3B851127465CBF10383880F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

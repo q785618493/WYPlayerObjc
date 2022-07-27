@@ -1,0 +1,6 @@
+framework module WYPlayerObjc {
+  umbrella header "WYPlayerObjc-umbrella.h"
+
+  export *
+  module * { export * }
+}

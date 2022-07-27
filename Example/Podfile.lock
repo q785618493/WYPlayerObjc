@@ -1,0 +1,16 @@
+PODS:
+  - WYPlayerObjc (0.8.8)
+
+DEPENDENCIES:
+  - WYPlayerObjc (from `../`)
+
+EXTERNAL SOURCES:
+  WYPlayerObjc:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  WYPlayerObjc: ab4ce7a2d9220b201beb451e7ce517542f4b5d85
+
+PODFILE CHECKSUM: 20685aba4d2a16870767fe62730e54cc28cd7699
+
+COCOAPODS: 1.11.3
