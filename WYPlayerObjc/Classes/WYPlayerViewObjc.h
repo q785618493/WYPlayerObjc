@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /* 播放器构造方法 **/
 - (instancetype)initWithFrame:(CGRect)frame
-                    urlString:(NSString *)urlString;
+                    urlString:(NSString *_Nonnull)urlString;
 
 /* 准备播放 **/
 - (void)prepareToPlay;

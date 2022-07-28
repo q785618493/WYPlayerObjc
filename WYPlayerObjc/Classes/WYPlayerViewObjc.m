@@ -27,7 +27,16 @@
     return self;
 }
 
-- (void)createCommonUrlString:(NSString *)urlString {
+- (void)createCommonUrlString:(NSString *_Nonnull)urlString {
+    NSURL *playURL;
+    if ([urlString hasPrefix:@"http"] || [urlString hasPrefix:@"rtmp"]) {
+        
+        playURL = [NSURL URLWithString:urlString];
+    }
+    else {
+        playURL = [NSURL fileURLWithPath:urlString];
+    }
+    
     [IJKFFMoviePlayerController checkIfFFmpegVersionMatch:true];
     
     /*
@@ -96,8 +105,8 @@
     [options setFormatOptionIntValue:30 * 1000 * 1000 forKey:@"timeout"];
     
     // 创建IJKFFMoviePlayerController：专门用来直播，传入拉流地址就好了
-//    _player = [[IJKFFMoviePlayerController alloc] initWithContentURL:[NSURL URLWithString:self.liveURLString] withOptions:options];
-    self.player = [[IJKFFMoviePlayerController alloc] initWithContentURLString:urlString withOptions:options];
+    self.player = [[IJKFFMoviePlayerController alloc] initWithContentURL:playURL withOptions:options];
+//    self.player = [[IJKFFMoviePlayerController alloc] initWithContentURLString:urlString withOptions:options];
     [self.player.view setBackgroundColor:[UIColor blackColor]];
     [self.player.view setAutoresizingMask:UIViewAutoresizingFlexibleWidth & UIViewAutoresizingFlexibleHeight];
 //    [self.player.view setAutoresizingMask:UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight];
